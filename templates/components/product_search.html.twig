@@ -1,0 +1,15 @@
+{# templates/components/product_search.html.twig #}
+<div { { {{ attributes }}>
+	<input
+        type="search"
+        name="query"
+        value=
+        data-action="live#update"
+     = ="{{ query }}">
+
+	<ul>
+		{% for product in this.products %}
+			<li>{{ product.name }}</li>
+		{% endfor %}
+	</ul>
+</div>

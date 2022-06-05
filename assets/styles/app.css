@@ -1,0 +1,16 @@
+:root {
+    /* section background */
+    --bg-init: #fdf5fd;
+    --bg-second: #cfcccf;
+    --bg-init-trans: #fdf5fd;
+    --bg-second-trans: #cfcccf;
+}
+
+body.black {}
+
+body {
+    background-color: var(--bg-init);
+    color: rgb(36, 34, 34);
+}
+
+/* ELEMENT DU DOM */
