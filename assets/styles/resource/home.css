@@ -1,0 +1,19 @@
+#home .blocks {}
+
+#home .blocks .block {
+    margin: 0 20px;
+}
+
+#home .block .block-service {
+    /* background-color: var(--bg-second); */
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#home .img {
+    background: url('../../images/my/icone_image/image_logo.png') center / contain no-repeat;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    right: 0;
+}

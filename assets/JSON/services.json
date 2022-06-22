@@ -1,0 +1,136 @@
+[
+    {
+        "title": "bureautique",
+        "p": "Text d'explication pour ce service",
+        "services": {
+            "marketing": {
+                "typeofservice": "payant",
+                "name": "marketing",
+                "slug": "marketing",
+                "description": "ce-ci est la description de ce service",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            },
+            "Traitement de text": {
+                "typeofservice": "gratuite",
+                "name": "traitement de text",
+                "slug": "traitement-de-text",
+                "description": "Création de cv, demade, lettre de motivation, projet, ...",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            }
+        }
+    },
+    {
+        "title": "autre",
+        "p": "Text d'explication pour ce service",
+        "services": {
+            "marketing": {
+                "typeofservice": "payant",
+                "name": "marketing",
+                "slug": "marketing",
+                "description": "ce-ci est la description de ce service",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            },
+            "Traitement de text": {
+                "typeofservice": "gratuite",
+                "name": "traitement de text",
+                "slug": "traitement-de-text",
+                "description": "Création de cv, demade, lettre de motivation, projet, ...",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            },
+            "Ecriture de projet": {
+                "typeofservice": "payant",
+                "name": "traitement de text",
+                "slug": "traitement-de-text",
+                "description": "Création de cv, demade, lettre de motivation, projet, ...",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            }
+        }
+    },
+    {
+        "title": "maintenance",
+        "p": "Text d'explication pour ce service",
+        "typeofservice": "gratuite",
+        "services": {
+            "referencement web": {
+                "typeofservice": "payant",
+                "name": "referencement web",
+                "slug": "referencement-web",
+                "description": "ce-ci est la description de ce service",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            },
+            "optimisation de votre site web": {
+                "typeofservice": "payant",
+                "name": "optimisation de votre site web",
+                "slug": "optimisation-de-votre-site-web",
+                "description": "Création de cv, demade, lettre de motivation, projet, ...",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            }
+        }
+    },
+    {
+        "title": "coucou",
+        "p": "Text d'explication pour coucou",
+        "typeofservice": "gratuite",
+        "services": {
+            "referencement web": {
+                "typeofservice": "payant",
+                "name": "referencement web",
+                "slug": "referencement-web",
+                "description": "ce-ci est la description de ce service",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            },
+            "optimisation de votre site web": {
+                "typeofservice": "payant",
+                "name": "optimisation de votre site web",
+                "slug": "optimisation-de-votre-site-web",
+                "description": "Création de cv, demade, lettre de motivation, projet, ...",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            },
+            "optimisation de votre site shoping": {
+                "typeofservice": "payant",
+                "name": "optimisation de votre site shoping",
+                "slug": "optimisation-de-votre-site-web",
+                "description": "Création de cv, demade, lettre de motivation, projet, ...",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            },
+            "optimisation de votre site portfolio": {
+                "typeofservice": "payant",
+                "name": "optimisation de votre site portfolio",
+                "slug": "optimisation-de-votre-site-web",
+                "description": "Création de cv, demade, lettre de motivation, projet, ...",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            },
+            "optimisation de votre site ecommerce": {
+                "typeofservice": "payant",
+                "name": "optimisation de votre site ecommerce",
+                "slug": "optimisation-de-votre-site-web",
+                "description": "Création de cv, demade, lettre de motivation, projet, ...",
+                "desc": "une description plus global et plus detaillé du service en cour ...",
+                "status": true,
+                "img": "../"
+            }
+        }
+    }
+]

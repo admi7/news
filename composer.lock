@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c7627ba843d8240e2bfc674383e7216",
+    "content-hash": "dbb70ba8f690a1d06b21108313ff3db4",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -6802,20 +6802,21 @@
         },
         {
             "name": "symfony/ux-live-component",
-            "version": "v2.1.1",
+            "version": "v2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/ux-live-component.git",
-                "reference": "195d556619910f33e1600a078d177c7bcf6e7d2f"
+                "reference": "9ed191e29ed599059929469a24dd74ee7ca548e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/ux-live-component/zipball/195d556619910f33e1600a078d177c7bcf6e7d2f",
-                "reference": "195d556619910f33e1600a078d177c7bcf6e7d2f",
+                "url": "https://api.github.com/repos/symfony/ux-live-component/zipball/9ed191e29ed599059929469a24dd74ee7ca548e0",
+                "reference": "9ed191e29ed599059929469a24dd74ee7ca548e0",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0",
+                "symfony/property-access": "^5.4|^6.0",
                 "symfony/serializer": "^5.4|^6.0",
                 "symfony/ux-twig-component": "^2.1"
             },
@@ -6866,7 +6867,7 @@
                 "twig"
             ],
             "support": {
-                "source": "https://github.com/symfony/ux-live-component/tree/v2.1.1"
+                "source": "https://github.com/symfony/ux-live-component/tree/v2.2.0"
             },
             "funding": [
                 {
@@ -6882,7 +6883,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-21T11:16:10+00:00"
+            "time": "2022-06-14T19:28:41+00:00"
         },
         {
             "name": "symfony/ux-twig-component",

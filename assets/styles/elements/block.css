@@ -1,0 +1,170 @@
+.block-designe-container {
+    position: relative;
+    max-width: 310px;
+    transform: skewY(-10deg);
+    transition: var(--trans-04);
+}
+
+.block-designe-container::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: var(--bg-second);
+    width: 100%;
+    height: 20px;
+    filter: brightness(0.6);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: var(--trans-04);
+}
+
+.block-designe-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background-color: var(--bg-second);
+    width: 20px;
+    height: 100%;
+    filter: brightness(0.6);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: var(--trans-04);
+}
+
+/*
+.block-designe-container:hover {
+    transform: skewY(-9deg);
+    transition: var(--trans-04);
+} */
+
+.block-designe-container .block-header,
+.block-designe-container .block-footer {
+    position: relative;
+    transform: skewY(10deg);
+    margin-bottom: 15px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.block-designe-container .block-footer {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: reverse;
+    justify-content: space-between;
+}
+
+.block-designe {
+    position: relative;
+    min-width: 250px;
+    max-width: 300px;
+    transition: var(--trans-04);
+    z-index: calc(1 * var(--i));
+}
+
+.block-designe:hover {
+    transform: translateX(15px);
+    /*
+    ce background (var(--col)) est pour le designe
+    en function des couleur personaliser
+    */
+    /* background-color: var(--col); */
+    background-color: var(--bg-second);
+    transition: var(--trans-07);
+}
+
+.block-designe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background-color: var(--bg-second);
+    width: 20px;
+    height: 100%;
+    filter: brightness(0.6);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: var(--trans-04);
+}
+
+.block-designe:hover::before {
+    background-color: var(--col);
+    filter: brightness(0.8);
+    transition: var(--trans-04);
+}
+
+.bg-designe-col:hover {
+    background-color: var(--col);
+    color: black;
+    opacity: 1;
+    transition: var(--trans-05);
+}
+
+.block-designe::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 0;
+    background-color: var(--bg-second);
+    width: 100%;
+    height: 20px;
+    filter: brightness(0.6);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: var(--trans-04);
+}
+
+.block-designe:hover::after {
+    background-color: var(--col);
+    filter: brightness(0.8);
+    transition: var(--trans-04);
+}
+
+/* .block-designe:hover .link {
+    transform: translateY(7px);
+    transition: var(--trans-05);
+} */
+
+/* *************************************************************** */
+/* ############# BLOCK ############## */
+/* *************************************************************** */
+
+.block {
+    width: var(--width);
+    max-width: var(--max-width);
+    min-width: var(--min-width);
+    margin: var(--margin);
+}
+
+.block-designe-container .link {
+    margin: 0;
+    max-width: 120px;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    opacity: 0.7;
+    font-weight: 500;
+    color: var(--col-second-trans);
+    transform: translateY(0);
+    background-color: var(--bg-second-trans);
+    box-shadow:
+        -2px -4px 3px var(--bg-init-trans),
+        2px 4px 3px var(--bg-init-trans);
+    border: 2px solid var(--bg-init);
+    transition: var(--trans-06);
+}
+
+.block-designe-container .link:hover {
+    background-color: var(--col);
+    border: none;
+    opacity: 1;
+    box-shadow: 2px 4px 5px var(--bg-init-trans);
+    transition: var(--trans-04);
+}
+
+.block a .link {
+    margin: 10px;
+    max-width: 220px;
+    transform: translateY(25px);
+    background-color: var(--bg-init);
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Moustapha Fall",
+        "slug": "moustapha-fall",
+        "role": "boutiquier",
+        "status": "vip",
+        "tel": "77-361-06-81",
+        "description": "je suis vendeur de colle pour femme, de jolie colle importer de Turkie",
+        "lieu": "Thiaroye",
+        "type": "Boutique de coll",
+        "img": "../",
+        "handler": "boutique"
+    },
+    {
+        "name": "Mountaga",
+        "slug": "mountagua",
+        "role": "boutiquier",
+        "status": "ordinaire",
+        "tel": "77-361-06-81",
+        "description": "je suis vendeur de trés bon qualité chaussure pour Homme/Femme, de jolie colle importer de Espagne",
+        "lieu": "Thiaroye",
+        "type": "Boutique de chaussure",
+        "img": "../",
+        "handler": "boutique"
+    }
+]

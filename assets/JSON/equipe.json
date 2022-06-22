@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Mouhamadou diallo",
+        "slug": "mouhamadou-diallo",
+        "role": "Developper full-stack",
+        "status": "vip",
+        "experience": 2,
+        "age": 25,
+        "matrimoniale": "Celibataire",
+        "tel": "77-409-52-78 77-361-06-81",
+        "description": "je suis developpeur Full-stack et pasionné des nouvelles technologie !",
+        "img": "../"
+    },
+    {
+        "name": "Daouda Wade",
+        "slug": "daoudawade",
+        "role": "Developper Front-End",
+        "status": "simple",
+        "experience": 1,
+        "age": 23,
+        "matrimoniale": "Celibataire",
+        "tel": "77-381-43-10",
+        "description": "je suis developpeur Front-End, Designer, Audio-visuelle et pasionné des nouvelles technologie !",
+        "img": "../"
+    }
+]

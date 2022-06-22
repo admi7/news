@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Serigne Fallou Tall",
+        "slug": "erigne-fallou-tall",
+        "role": "web",
+        "status": "ordinaire",
+        "tel": "77-361-06-81",
+        "type": "Agence immoblier",
+        "description": "Notre agence vous souhaite la bienvenue",
+        "lieu": "Pikine Icotaf",
+        "img": "../",
+        "handler": "web"
+    }
+]

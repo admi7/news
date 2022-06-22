@@ -1,0 +1,53 @@
+header {
+    /* min-height: 200px; */
+    width: 100%;
+    /* background: radial-gradient(ellipse farthest-corner at top right, transparent 30%, var(--bg-second) 80%); */
+}
+
+header .img-header {
+    background: url('../../images/my/icone_image/Global-Availability-1.png') center / contain no-repeat;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+
+.header-infos {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-infos p {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3px;
+}
+
+.header-infos .info {
+    padding: 5px;
+    min-width: 500px;
+    justify-content: space-between;
+}
+
+header .nums {
+    padding: 5px;
+}
+
+header .num {
+    margin-top: 5px;
+}
+
+header .num strong {
+    font-size: 18px;
+    color: var(--primary);
+}
+
+header .num span {
+    color: var(--primary);
+    font-weight: 600;
+    margin-right: 3px;
+}

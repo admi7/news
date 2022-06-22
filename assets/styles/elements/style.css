@@ -1,0 +1,27 @@
+/* STYLE */
+/* ***************************************** */
+.big-title {
+    font-size: 45px;
+    color: var(--col-title);
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.smoll-title {
+    font-size: 30px;
+    color: var(--col-title);
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.title {
+    font-size: 22px;
+    color: var(--col-title);
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.p {
+    font-size: 18px;
+    font-family: serif;
+}
