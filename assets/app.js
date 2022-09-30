@@ -1,12 +1,19 @@
 // any CSS you import will output into a single css file (app.css in this case)
-import './styles/app.css';
+import './styles/app.scss';
 
 // start the Stimulus application
 import './bootstrap';
-import { cssFile } from './js/style/fileCss';
 
 require( 'bootstrap' );
 
-const $ = require('jquery');
+const $ = require( 'jquery' );
 
-cssFile()
+import bsCustomFileInput from 'bs-custom-file-input';
+import ajax from './js/ajax';
+
+bsCustomFileInput.init();
+
+ajax();
+
+// console.log( DOM[ 'envoyerRequete' ] );
+console.log( "coucou je suis le console" );

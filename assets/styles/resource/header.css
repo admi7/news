@@ -1,5 +1,7 @@
 header {
-    /* min-height: 200px; */
+    /* min-height: calc(100vh - 200px); */
+    min-height: 100vh;
+    /* background-color: red; */
     width: 100%;
     /* background: radial-gradient(ellipse farthest-corner at top right, transparent 30%, var(--bg-second) 80%); */
 }

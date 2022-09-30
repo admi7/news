@@ -11,6 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\WebLink\GenericLinkProvider;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
+
 class HomeController extends AbstractController
 {
     #[Route('/home', name: 'app_home')]
@@ -29,11 +30,18 @@ class HomeController extends AbstractController
 
         $fileHelper = new FileHelper('services');
 
-        // dd($fileHelper->getServicesToJsonLimited($fileHelper->getElementToJson()));
-
-        // $this->treeServices($this->getServicesToJson());
         return $this->render('home/index.html.twig', [
-            "services" => $fileHelper->getServicesLimited($fileHelper->getElementToJson(), 2, 10)['shows']
+            "services" => $fileHelper->getServicesLimited($fileHelper->getElementToJson(), 2, 10)['shows'],
+            // "data" => ["name", "Meta"]
         ]);
+    }
+
+    #[Route('/home:post:{data}')]
+    public function homePost(Request $request, string $data)
+    {
+        // return $this->json(['data' => 'value'], 200);
+        return $this->redirectToRoute('app_home', [
+            "data" => $_POST['data']
+        ], 301);
     }
 }

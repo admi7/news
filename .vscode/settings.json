@@ -6,5 +6,11 @@
             "addWords": true,
             "scope": "workspace"
         }
-    }
+    },
+    "cSpell.ignoreWords": [
+        "module"
+    ],
+    "WhiteSource Advise.Diff.BaseBranch": "master",
+    "slither.solcPath": "",
+    "slither.hiddenDetectors": []
 }

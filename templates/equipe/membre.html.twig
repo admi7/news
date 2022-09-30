@@ -3,11 +3,11 @@
 {% block title %}Hello EquipeController!
 {% endblock %}
 {% block body %}
-
 	{% include "resource/_nav.html.twig" %}
+
 	<div class="container-fluid" id="membre">
-		<div class="container">
-			<div class="block red">
+		<div class="container green">
+			<div class="block">
 				<h2 class="smoll-title line">{{membrePersonnel.name}}</h2>
 				{# ont va mettre ici son image #}
 				<div class="text line-05">
@@ -20,10 +20,7 @@
 						ans</strong>
 				</div>
 				<a class="fca link btn btn-advanced" href=" {{path('app_contact')}}domaine=equipe&sujet={{membrePersonnel.slug}} ">Contactez-le</a>
-
 			</div>
-
 		</div>
-
 	</div>
-</div>{% endblock %}
+{% endblock %}

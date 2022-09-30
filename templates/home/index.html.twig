@@ -9,37 +9,15 @@
 		{% include "resource/nav.html.twig" %}
 	</div>
 {% endblock nav %}
-{% set i = services | length %}
-{% set cols = ['1877f2', '25d366', '1d11f2','c32aa3', 'ff0001', '0a66c2' ] %}
-
+{% set i = services | length %}{% set cols = ['1877f2', '25d366', '1d11f2','c32aa3', 'ff0001', '0a66c2' ] %}
 {% block body %}
 	<div id="home">
-		<div class="container-fluid">
+		<div class="home_header">
 			{% include "resource/_header.html.twig" %}
-			<div class="container">
-				<div class="row">
-					<h2 class="big-title line mrg-15">servcies</h2>
-					{% include "resource/components/blocks_designe.html.twig" %}
-					<div class="container line">
-						<div class="line rad-05 bg-second">
-							<p class="p">
-								<strong>Vous</strong>
-								pouvez voir tous nos
-								<a href=" {{ path('app_services') }} " class="btn">services</a>
-								(<span>
-									<a href=" {{path('app_services')}}typeofservice=gratuite " class="btn">Gratuite</a>
-
-								</span>
-								ou
-								<span>
-									<a href=" {{path('app_services')}}typeofservice=payant " class="btn">Payant</a>
-								</span>)
-							</p>
-						</p>
-					</div>
-				</div>
-			</div>
 		</div>
+		<h1 class="big-title line">Titre de la page</h1>
 	</div>
-
-</div>{% endblock %}
+{% endblock %}
+{% block javascripts %}
+	<script src = " {{ asset('js/ajax/home/home.js') }} "></script>
+{% endblock %}
