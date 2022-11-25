@@ -1,23 +1,25 @@
-{% extends 'base.html.twig' %}
+{% extends 'base1.html.twig' %}
 
-{% block title %}Hello HomeController!
+{% block title %}
+	PAGE D'ACCEUL !
 {% endblock %}
-
-{% block nav %}
-	<div class="container-navs">
-		{% include "resource/_nav.html.twig" %}
-		{% include "resource/nav.html.twig" %}
-	</div>
-{% endblock nav %}
-{% set i = services | length %}{% set cols = ['1877f2', '25d366', '1d11f2','c32aa3', 'ff0001', '0a66c2' ] %}
 {% block body %}
-	<div id="home">
-		<div class="home_header">
-			{% include "resource/_header.html.twig" %}
+	<div id="home" class="full cc">
+		<div class="decor-01 fca">
+			<div class="limit">
+				{% include "resource/_nav.html.twig" %}
+				<div class="navbar flex green">
+					<a href="" class="btn">Shop</a>
+					<a href="" class="btn">Contact</a>
+				</div>
+			</div>
 		</div>
-		<h1 class="big-title line">Titre de la page</h1>
+		{% include "resource/_header.html.twig" %}
+		<section class="home-container">
+			<h1 class="title">La partie du body content</h1>
+		</section>
 	</div>
 {% endblock %}
 {% block javascripts %}
-	<script src = " {{ asset('js/ajax/home/home.js') }} "></script>
+	<script src = " {{ asset('bundles/js/ajax.js') }} "></script>
 {% endblock %}

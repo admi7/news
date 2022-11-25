@@ -1,33 +1,11 @@
-<nav>
-	<div class="logo-container fca">
-		<div class="img-logo"></div>
-		<div class="text line">
-			<p class="p-logo">
-				<strong>MS</strong>.<span>live</span>
-			</p>
-			<strong>Multiservices en ligne.</strong>
-		</div>
-	</div>
-	<div class="nav-links">
-		<ul>
-			<li>
-				<a href=" {{path('app_home')}} ">Home</a>
-			</li>
-			<li>
-				<a href=" {{path('app_equipe')}} ">Equipe</a>
-			</li>
-			<li>
-				<a href=" {{ path('app_services')}} ">Services</a>
-			</li>
-			<li>
-				<a href=" {{path('app_clients')}} ">Clients</a>
-			</li>
+<nav class="fca">
+	<button class="btn btn-success">button</button>
+	<div class="nav-links fca">
+		<ul class="fca">
+			<li><a href=" {{path('app_home')}} ">Home</a></li>
+			<li><a href=" {{path('app_equipe')}} ">Equipe</a></li>
+			<li><a href=" {{ path('app_services')}} ">Services</a></li>
+			<li><a href=" {{path('app_clients')}} ">Clients</a></li>
 		</ul>
-		<div class="">
-			<a class="btn btn-secondary" href=" {{path('app_shop')}} ">Shop</a>
-
-			<a class="btn btn-advanced" href=" {{path('app_contact')}} ">Contact</a>
-
-		</div>
 	</div>
 </nav>

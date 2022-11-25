@@ -9,11 +9,13 @@ require( 'bootstrap' );
 const $ = require( 'jquery' );
 
 import bsCustomFileInput from 'bs-custom-file-input';
-import ajax from './js/ajax';
+import indexModule from './js/index.module';
 
 bsCustomFileInput.init();
 
-ajax();
+const Im = indexModule();
+console.log( Im );
+console.log( 'Im' );
 
 // console.log( DOM[ 'envoyerRequete' ] );
 console.log( "coucou je suis le console" );

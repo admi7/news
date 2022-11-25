@@ -1,100 +1,13 @@
-.container-navs {
-    z-index: 5;
+nav a {
+    text-decoration-line: none;
+    color: inherit;
 }
 
-nav,
-nav .nav-links ul,
-nav .nav-links {
-    display: flex;
-    align-items: center;
+nav a:hover {
+    color: var(--bg-init);
 }
 
 .navbar {
-    display: flex;
-    flex-direction: column;
-}
-
-.navbar .nav-links ul {
-    flex-direction: column;
-}
-
-nav {
-    z-index: 3;
-}
-
-nav .img-logo {
-    background: url('../../images/my/icone_image/image_logo.png') center / contain no-repeat;
-    height: 100px;
-    width: 100px;
-}
-
-.logo-container p strong {
-    font-size: 30px;
-}
-
-.logo-container p span {
-    font-size: 25px;
-}
-
-.logo-container p strong,
-.logo-container p span {
-    color: var(--primary);
-}
-
-.logo-container strong {
-    font-size: larger;
-}
-
-nav .nav-links ul,
-nav .nav-links {
-    justify-content: space-evenly;
-}
-
-nav {
-    justify-content: space-between;
-}
-
-nav .nav-links {
-    padding: 0 10px;
-}
-
-nav .nav-links ul {
-    margin-right: 100px;
-}
-
-.nav-links ul li {
-    margin: 0 4px;
-    transition: 0.6s all ease-in-out;
-}
-
-.nav-links ul li:hover {
-    background-color: var(--bg-second);
-    border-radius: 5px;
-    transition: 0.6s all ease-in-out;
-}
-
-/* ******************************* */
-/* ****** second navbar */
-/* ******************************* */
-
-.block-ul li {
-    margin: 0 10px;
-    /* overflow: hidden */
-}
-
-.container-block-li {
-    position: absolute;
-    background-color: var(--bg-second);
-    padding: 0;
-    width: 100%;
-    left: 0;
-    height: 0;
-    overflow: hidden;
-    transition: var(--trans-04);
-}
-
-.block-ul li:hover .container-block-li {
-    height: 300px;
-    padding: auto;
-    transition: var(--trans-04);
+    margin: 10px 0;
+    width: auto;
 }

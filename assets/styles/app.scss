@@ -1,22 +1,14 @@
-@import './elements/init.css';
-@import './elements/style.css';
-@import './elements/class.css';
-@import './elements/button.css';
-@import './elements/flex.css';
-@import './elements/block.css';
-@import './elements/test.css';
-@import './elements/form.css';
-@import './resource/nav.css';
-@import './resource/home.css';
+@import './elements/elements.css';
+@import './resource/resource.css';
 
 @import '~bootstrap/scss/bootstrap';
 
 :root {
     /* section background */
     --bg-init: #fdf5fd;
-    --bg-second: #cfcccf;
+    --bg-second: #e7e0e7;
     --bg-init-trans: #fdf5fde3;
-    --bg-second-trans: #cfcccfea;
+    --bg-second-trans: #e6e6e6ea;
     /* section des coleurs de button */
     --primary: MidnightBlue;
     --success: rgb(59, 255, 0);
@@ -33,7 +25,7 @@
     --col-init: rgb(22, 21, 21);
     --col-second: rgb(36, 36, 36);
     --col-visible: rgb(230, 124, 82);
-    --col-primayr: rgb(94, 146, 223);
+    --col-primary: rgb(94, 146, 223);
 }
 
 body {
@@ -55,7 +47,6 @@ body.black {
 }
 
 #app {
-    max-width: 1500px;
     width: 100%;
 }
 

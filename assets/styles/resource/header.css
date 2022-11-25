@@ -1,20 +1,3 @@
-header {
-    /* min-height: calc(100vh - 200px); */
-    min-height: 100vh;
-    /* background-color: red; */
-    width: 100%;
-    /* background: radial-gradient(ellipse farthest-corner at top right, transparent 30%, var(--bg-second) 80%); */
-}
-
-header .img-header {
-    background: url('../../images/my/icone_image/Global-Availability-1.png') center / contain no-repeat;
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-}
-
 .header-infos {
     margin-top: 10px;
     width: 100%;

@@ -3,3 +3,34 @@
 .flex {
     display: flex;
 }
+
+.full {
+    width: 100%;
+}
+
+.limit {
+    width: 100%;
+    max-width: 1200px;
+    /* background-color: #234578; */
+}
+
+.cc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fc {
+    display: flex;
+    align-items: center;
+}
+
+.decor-01 {
+    padding: 50px;
+    background-color: var(--bg-second);
+    min-width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+    background-size: contain;
+}
