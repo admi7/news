@@ -19,20 +19,6 @@ class EquipeController extends AbstractController
 
         $membre = new FileHelper('equipe');
         // var_dump($membre);
-        return $this->render('equipe/index.html.twig', [
-            "membres" => $membre->getElementToJson()
-        ]);
-    }
-
-    #[Route('/equipe/{membre}', name: 'app_membre')]
-    public function membre(Request $request, string $membre): Response
-    {
-        $pushElements = new PushElements();
-        $pushElements->session($request);
-        $membrePersonnel = new FileHelper('equipe');
-        return $this->render('equipe/membre.html.twig', [
-            "membrePersonnel" => $membrePersonnel->treeElementBySlug($membre),
-            "membre" => $membre
-        ]);
+        return $this->render('equipe/index.html.twig', []);
     }
 }

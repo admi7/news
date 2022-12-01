@@ -1,13 +1,17 @@
 nav a {
     text-decoration-line: none;
     color: inherit;
+    transition: var(--trans-05);
 }
 
 nav a:hover {
-    color: var(--bg-init);
+    color: var(--col-visible);
+    transition: var(--trans-04);
 }
 
-.navbar {
-    margin: 10px 0;
-    width: auto;
+#home menu {
+    margin: 20px 0;
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 4px;
 }

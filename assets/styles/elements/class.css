@@ -1,8 +1,5 @@
 /* CLASS */
 /* *************************************** */
-.flex {
-    display: flex;
-}
 
 .full {
     width: 100%;
@@ -10,27 +7,41 @@
 
 .limit {
     width: 100%;
-    max-width: 1200px;
-    /* background-color: #234578; */
-}
-
-.cc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.fc {
-    display: flex;
-    align-items: center;
+    max-width: 1500px;
 }
 
 .decor-01 {
-    padding: 50px;
-    background-color: var(--bg-second);
+    /* padding: 50px; */
     min-width: 100%;
-    min-height: 300px;
-    object-fit: cover;
-    object-position: bottom;
-    background-size: contain;
+    min-height: 250px;
+}
+
+.box {
+    padding: 20px;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px var(--bg-second);
+}
+
+@media (min-width: 1400px) {
+    .limit {}
+}
+
+@media (min-width: 1000px) {
+    .limit {
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .limit {}
+}
+
+@media (min-width: 600px) {
+    .limit {}
+}
+
+@media (min-width: 400px) {
+    .limit {}
 }

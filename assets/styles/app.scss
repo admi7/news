@@ -5,10 +5,10 @@
 
 :root {
     /* section background */
-    --bg-init: #fdf5fd;
-    --bg-second: #e7e0e7;
-    --bg-init-trans: #fdf5fde3;
-    --bg-second-trans: #e6e6e6ea;
+    --bg-init: #ffffff;
+    --bg-second: #f1edf1;
+    --bg-init-trans: #fffdffe3;
+    --bg-second-trans: #f0e9e9ea;
     /* section des coleurs de button */
     --primary: MidnightBlue;
     --success: rgb(59, 255, 0);
@@ -16,15 +16,15 @@
     --error: rgb(217, 101, 38);
     --advanced: Coral;
     /* section transition */
-    --trans-04: 0.3s all ease-in-out;
+    --trans-03: 0.3s all ease-in-out;
     --trans-04: 0.4s all ease-in-out;
     --trans-05: 0.5s all ease-in-out;
     --trans-06: 0.6s all ease-in-out;
     --trans-07: 0.7s all ease-in-out;
-    /* section background */
+    /* section colors */
     --col-init: rgb(22, 21, 21);
     --col-second: rgb(36, 36, 36);
-    --col-visible: rgb(230, 124, 82);
+    --col-visible: rgb(255, 149, 107);
     --col-primary: rgb(94, 146, 223);
 }
 

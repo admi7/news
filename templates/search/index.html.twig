@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'base1.html.twig' %}
 
 {% block title %}Hello SearchController!
 {% endblock %}
@@ -6,13 +6,13 @@
 {% block body %}
 	<div class="container-fluid" id="search">
 		result de recherche
-		<div { class="m-4" { {{ attributes }}>
+		<div { class="m-4" { { {{ attributes }}>
 			<input
         type="search"
         name="query"
         value=
         data-action="live#update"
-     = ="{{ query }}">
+     = = ="{{ query }}">
 
 			{% for blogpost in this.services %}
 				{{ component('block', {'service': blogpost.slug}) }}

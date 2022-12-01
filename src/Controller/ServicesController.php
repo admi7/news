@@ -20,9 +20,7 @@ class ServicesController extends AbstractController
 
         $allServices = $fileHelper->getServicesLimited($fileHelper->getElementToJson(), 7, 10)['shows'];
 
-        return $this->render('services/index.html.twig', [
-            'services' => $allServices,
-        ]);
+        return $this->render('services/index.html.twig', []);
     }
 
     #[Route('/services/{domaineSearch}q={search}')]

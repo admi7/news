@@ -1,30 +1,7 @@
-.form-designe {
-    display: flex;
-    flex-direction: column;
-    min-width: 400px;
-    max-width: 700px;
-    /* background-color: red; */
-}
-
 .form-designe label {
-    position: relative;
-    width: 300px;
+    margin: 5px;
 }
 
-.form-designe label {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--bg-second);
-    background: inherit;
-    border-radius: 4px;
-    outline: none;
-    color: inherit;
-    font-size: 1em;
+.form-designe label span {
+    margin: 0 5px;
 }
-
-.form-designe .form-input {
-    margin: 10px;
-    width: 100%;
-}
-
-.form-designe input {}

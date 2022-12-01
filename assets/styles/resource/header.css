@@ -1,38 +1,12 @@
-.header-infos {
-    margin-top: 10px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+header h1 {
+    color: var(--col-primary);
 }
 
-.header-infos p {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 3px;
+header .decor-01 {
+    min-width: 100%;
+    min-height: 250px;
 }
 
-.header-infos .info {
-    padding: 5px;
-    min-width: 500px;
-    justify-content: space-between;
-}
-
-header .nums {
-    padding: 5px;
-}
-
-header .num {
-    margin-top: 5px;
-}
-
-header .num strong {
-    font-size: 18px;
-    color: var(--primary);
-}
-
-header .num span {
-    color: var(--primary);
-    font-weight: 600;
-    margin-right: 3px;
+header a {
+    text-decoration-line: none;
 }
