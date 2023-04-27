@@ -1,5 +1,64 @@
-<h2 class="smoll-title line btn-secondary rad-05">footer</h2>
+<footer class="full fa">
+  {# <h2 class="smoll-title line">footer</h2> #}
 
-<div class="container line">
-	<p class="p">Votre Nombre de viste est :{{app.session.get('nVisite')}}</p>
-</p></div>
+  <div class="container cca limit">
+    {# <p class="p">Votre Nombre de viste est :{{app.session.get('nVisite')}}</p> #}
+
+    <div class="cca w-100">
+      <div class="line">
+        {# <p>partie des reseaux sciaux</p> #}
+        <div class="fca w-100">
+          <a href="#facebook"><span><img src=" {{ asset('build/images/icons/icon/phone.gif') }} " alt="facebook" /></span></a>
+          <a href="#instagram"><span><img src=" {{ asset('build/images/icons/icon/idea.png') }} " alt="instagram" /></span></a>
+          <a href="#twitter"><span><img src=" {{ asset('build/images/icons/icon/desk.png') }} " alt="twitter" /></span></a>
+        </div>
+      </div>
+      <div class="newsLetter w-100 line cca">
+        <h1 class="line smoll-title">postuler pour les news letter</h1>
+        <form class="fca w-100" action="get">
+          <input type="text" placeholder="Email adress ..." />
+          <button class="btn btn-valid" type="submit">valider</button>
+        </form>
+        <p class="p">Inscrivez-vous aux Newsletters et recevez nos offres spéciaux et actualités.</p>
+      </div>
+      <div class="container container-footer w-100">
+        <div class="about ccb box-dyn" style="--width: 400px; --height: 350px">
+          <img src=" {{ asset('build/images/my/web/logo.svg') }}" alt="logo" />
+          <h3 class="">Nos informations !</h3>
+          <div class="flex">
+            <p>
+              numero : <span><img src=" {{ asset('build/images/icons/icon/telephone.png') }} " alt="phone call" /></span>
+            </p>
+            <div class="column">
+              <strong>77 409 52 78</strong><strong>77 409 52 78</strong>
+            </div>
+          </div>
+          <p>
+            Email : <strong>admi7.devops@gmail.com</strong>
+          </p>
+          <p>
+            Adresse : <strong>Dakr - Pikine - Icotaf</strong>
+          </p>
+        </div>
+        <div class="links-footer column box-dyn" style="--width: 400px; --height: 300px">
+          <h3>voir les pages !</h3>
+          <div class="column links">
+            <a href=" {{ path('app_home') }} ">Home</a>
+            <a href=" {{ path('app_home') }} ">tutos</a>
+            <a href=" {{ path('app_home') }} ">services</a>
+          </div>
+        </div>
+        <div class="infos-footer column box-dyn" style="--width: 400px; --height: 300px">
+          <h3>Infos suplementaires</h3>
+          <div class="column links">
+            <a href=" {{ path('app_home') }} ">Contrat</a>
+            <a href=" {{ path('app_home') }} ">Conditions des services</a>
+            <a href=" {{ path('app_home') }} ">A propos</a>
+            <a href=" {{ path('app_home') }} ">Autres</a>
+          </div>
+        </div>
+      </div>
+      {# <button class="btn btn-success">button</button> #}
+    </div>
+  </div>
+</footer>

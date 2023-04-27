@@ -1,0 +1,26 @@
+[
+    {
+        "categorie": "shopping",
+        "name": "Amet",
+        "avatar": "shopping.png",
+        "img": "courier.png",
+        "description": "this is a texte for exemple of one annonce for my web site !",
+        "link": "#link"
+    },
+    {
+        "categorie": "business plan",
+        "name": "Codou",
+        "avatar": "business.png",
+        "img": "courier.png",
+        "description": "this is a texte for exemple of one annonce for my web site !",
+        "link": "#link"
+    },
+    {
+        "categorie": "server",
+        "name": "Fallou",
+        "avatar": "server.png",
+        "img": "courier.png",
+        "description": "this is a texte for exemple of one annonce for my web site !",
+        "link": "#link"
+    }
+]

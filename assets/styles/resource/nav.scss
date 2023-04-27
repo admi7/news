@@ -1,0 +1,59 @@
+nav a {
+    text-decoration-line: none;
+    color: inherit;
+    transition: var(--trans-05);
+}
+
+nav a:hover {
+    color: var(--col-visible);
+    transition: var(--trans-04);
+}
+
+#home menu {
+    margin: 20px 0;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+nav {
+    background-color: var(--bg-second);
+}
+
+nav span img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+nav img {
+    width: 110px;
+}
+
+nav form {
+    width: 500px;
+    padding: 5px;
+}
+
+nav form input {
+    padding: 4px;
+    border: none;
+    min-width: 100%;
+    border-radius: 4px;
+}
+
+nav form input::before {
+    content: "";
+    position: relative;
+    top: 25px;
+    width: 50px;
+    background-color: #451;
+}
+
+nav .bar {
+    width: 300px;
+}
+
+.navbar {
+    background-color: var(--bg-bluewhite-trans);
+    box-shadow: 0 0 6px var(--bg-init);
+}

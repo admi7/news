@@ -1,59 +1,23 @@
 {% extends 'base1.html.twig' %}
 
 {% block title %}
-	PAGE D'ACCEUL !
+  ACCEUIL | mslive.sn
 {% endblock %}
+
 {% block body %}
-	<div id="home" class="full flex">
-		<section class="main cc w-100">
-			<section class="decor-01 fca">
-				<div class="limit">
-					{% include "resource/_nav.html.twig" %}
-					<menu class="fca">
-						<p>Vous pouvez nous contactez directement sur :
-							<strong>
-								<span></span>
-								77 361 06 81</strong>
-							/
-							<strong>
-								<span></span>
-								77 409 52 78</strong>
-							pour plus d'infos : clicker
-							<a class="btn btn-primary" href="">Ici</a>
-						</p>
-					</menu>
-				</div>
-			</section>
-			{% include "resource/_header.html.twig" %}
-			<section class="home-container w-100">
-				<div class="decor-01 cc ">
-					<div class="limit cc">
-						<menu class="fcb w-100">
-							<p class="p">Filtrer au niveaux des services</p>
-							<form class="filtres form-designe flex">
-								<label for="web" class="fca">
-									<input type="checkbox" name="web" id="web">
-									<span>web</span>
-								</label>
-								<label for="marketing" class="fca">
-									<input type="checkbox" name="marketing" id="marketing">
-									<span>marketing</span>
-								</label>
-								<label for="bureautique" class="fca">
-									<input type="checkbox" name="bureautique" id="bureautique">
-									<span>bureautique</span>
-								</label>
-							</form>
-						</menu>
-						{% include "resource/services-container.html.twig" %}
-						{% include "resource/clients-container.html.twig" %}
-					</div>
-				</div>
-			</section>
-		</section>
-		{% include "resource/annonces-container.html.twig" %}
-	</div>
-{% endblock %}
-{% block javascripts %}
-	<script src = " {{ asset('bundles/js/ajax.js') }} "></script>
+  <div id="home" class="flex">
+    <div class="w-100">
+      <nav id="nav_home" class="">
+        {% include 'resource/_nav.html.twig' %}
+      </nav>
+      <div class="body_home_container w-100">
+        {% include 'resource/_header.html.twig' %}
+      </div>
+      <h1 class="title line">titre h1</h1>
+      <div class="container">
+        <p>contenue</p>
+      </div>
+    </div>
+    {# {% include 'resource/annonces-container.html.twig' %} #}
+  </div>
 {% endblock %}

@@ -1,3 +1,34 @@
-<div class="annonces">
-	<p>annonce</p>
-</div></div>
+<div id="annonces" class="c">
+
+	<div class="fca header-annonces">
+		<span>0</span>
+		<h2 class="big-title">ANNONCES !</h2>
+	</div>
+
+	<div class="container-annoces red cca">
+		{% for annonce in annonces %}
+
+			{# debut de la carte d'annonce #}
+			<div class="card-annonce ccb">
+				<h3>{{ annonce.categorie }}
+					!</h3>
+				<div class="card-bottom h-100 ccb">
+					<div class="avatar">
+						<img class="img-top" src=' {{ asset("build/images/icons/vector/")}}{{annonce.avatar}}' alt="image d'annonce">
+					</div>
+					<div class="infos-card fca w-100">
+						<img class="img-perso" src=" {{ asset('build/images/icons/vector/') }}{{annonce.img}} " alt="image d'annonce">
+						<p class="p">Property
+							{{annonce.name}}</p>
+					</div>
+					<div class="text-annonce cb w-100">
+						<p class="p">{{ annonce.description  }}</p>
+						<a class="btn" href=" {{ annonce.link }} ">link to</a>
+					</div>
+				</div>
+			</div>
+			{# fin de la carte d'annonce #}
+
+		{% endfor %}
+	</div>
+</div>

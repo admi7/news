@@ -1,21 +1,21 @@
 // any CSS you import will output into a single css file (app.css in this case)
 import './styles/app.scss';
 
-// start the Stimulus application
-import './bootstrap';
-
-require( 'bootstrap' );
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 const $ = require( 'jquery' );
 
-import bsCustomFileInput from 'bs-custom-file-input';
-import indexModule from './js/index.module';
+require( 'bootstrap' );
 
 bsCustomFileInput.init();
 
-const Im = indexModule();
-console.log( Im );
-console.log( 'Im' );
+import bsCustomFileInput from 'bs-custom-file-input';
+import indexModule from './js/index.module';
+import annonces from './js/annonces';
+import allAnimations from './js/animations/anime';
 
-// console.log( DOM[ 'envoyerRequete' ] );
-console.log( "coucou je suis le console" );
+
+// annonces();
+allAnimations();

@@ -1,7 +1,15 @@
-@import './elements/elements.css';
-@import './resource/resource.css';
+// les import externe
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Poltawski+Nowy&family=Staatliches&display=swap');
+
+// font-family: 'Castoro Titling', cursive;
+// font-family: 'Poltawski Nowy', serif;
+// font-family: 'Staatliches', cursive;
 
 @import '~bootstrap/scss/bootstrap';
+
+@import './elements/elements.scss';
+@import './resource/resource.scss';
+
 
 :root {
     /* section background */
@@ -9,6 +17,8 @@
     --bg-second: #f1edf1;
     --bg-init-trans: #fffdffe3;
     --bg-second-trans: #f0e9e9ea;
+    --bg-bluewhite-trans: rgba(87, 75, 190, 0.767);
+    --bg-bluewhite: rgb(73, 60, 190);
     /* section des coleurs de button */
     --primary: MidnightBlue;
     --success: rgb(59, 255, 0);

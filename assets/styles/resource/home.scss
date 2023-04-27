@@ -16,9 +16,6 @@ section.decor-01 {
 #home .container article {
     margin: 5px;
     padding: 7px;
-    min-width: 420px;
-    max-width: 550px;
-    background-color: var(--bg-second);
     border-radius: 7px;
     box-shadow: 0 0 10px var(--bg-second);
     transition: var(--trans-04);
@@ -62,17 +59,25 @@ section.decor-01 {
 }
 
 .home-Container {
-    width: calc(100% - 200px);
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .annonces {
     min-width: 350px;
     padding: 5px;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 #home .main {
     max-height: 100vh;
     overflow-y: scroll;
+}
+
+#home .container .article {
+    /* background-color: #485; */
+    min-width: 900px;
+}
+
+#home .container .line-nowrap .article {
+    margin: 0 50px;
 }

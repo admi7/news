@@ -37,9 +37,47 @@
     justify-content: space-around;
 }
 
+
+// SECTION COLUMN ***********
+.column {
+    @extend %column;
+}
+
+.ca {
+    @extend %column;
+    justify-content: space-around;
+}
+
+.ccb {
+    @extend %column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cce {
+    @extend %column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cca {
+    @extend %column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cb {
+    @extend %column;
+    justify-content: space-between;
+}
+
+.ce {
+    @extend %column;
+    justify-content: space-evenly;
+}
+
 .cc {
-    display: flex;
-    flex-direction: column;
+    @extend %column;
     align-items: center;
 }
 
@@ -50,4 +88,11 @@
 
 .wrap {
     flex-wrap: wrap;
+}
+
+
+// SECTION ROW ***********
+
+.rr {
+    @extend %fr;
 }

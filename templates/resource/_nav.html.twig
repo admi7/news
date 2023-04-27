@@ -1,11 +1,42 @@
-<nav class="fca">
-	<button class="btn btn-primary">button</button>
-	<div class="nav-links fca">
-		<ul class="fca">
-			<li><a href=" {{path('app_home')}} ">Home</a></li>
-			<li><a href=" {{path('app_equipe')}} ">Equipe</a></li>
-			<li><a href=" {{ path('app_services')}} ">Services</a></li>
-			<li><a href=" {{path('app_clients')}} ">Clients</a></li>
-		</ul>
-	</div>
+<nav class="fcb">
+  <a href=" {{ path('app_home') }} "><img src=" {{ asset('build/images/my/web/logo-for-white-navbar.png') }}" alt="logo" /></a>
+  <menu>
+    <div class="fca">
+      <form class="fca" action="get">
+        <input type="text" placeholder="Recherche ..." />
+        {# <button class="btn-valid" type="submit">valider</button> #}
+      </form>
+      <div class="bar cca">
+        <p class="p">
+          Téléphone : <span><img src=" {{ asset('build/images/icons/icon/phone.gif') }} " alt="phone call" /></span><strong>33 000 00 00</strong>
+        </p>
+      </div>
+    </div>
+    <div class="nav-links fca">
+      <ul class="fca">
+        <li>
+          <a href=" {{ path('app_home') }} ">Home</a>
+        </li>
+        <li>
+          <a href=" {{ path('app_equipe') }} ">Equipe</a>
+        </li>
+        <li>
+          <a href=" {{ path('app_services') }} ">Services</a>
+        </li>
+      </ul>
+    </div>
+  </menu>
 </nav>
+<div class="navbar flex">
+  <ul class="flex">
+    <li>
+      <a href=" {{ path('app_services') }} ">Clients</a>
+    </li>
+    <li>
+      <a href=" {{ path('app_services') }} ">Boutique</a>
+    </li>
+    <li>
+      <a href=" {{ path('app_services') }} ">Services</a>
+    </li>
+  </ul>
+</div>

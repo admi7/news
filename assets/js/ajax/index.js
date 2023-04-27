@@ -14,10 +14,13 @@ const data = {
 };
 
 
-DOM[ 'envoyerRequete' ].addEventListener( 'click', ( e ) =>
+if ( DOM[ 'envoyerRequete' ] )
 {
-  sendReq( 'POST', 'home:post:' + data, data );
-} );
+  DOM[ 'envoyerRequete' ].addEventListener( 'click', ( e ) =>
+  {
+    sendReq( 'POST', 'home:post:' + data, data );
+  } );
+}
 
 module.exports = function ajax ()
 {

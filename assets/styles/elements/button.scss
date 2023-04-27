@@ -1,0 +1,35 @@
+/* BUTTONS */
+/* ********************************************** */
+
+.btn {
+    cursor: pointer;
+    border-radius: 4px;
+    background: inherit;
+    min-width: 160px;
+    padding: 10px;
+}
+
+.btn-success {
+    background-color: var(--success)
+}
+
+.btn-primary {
+    background-color: var(--primary)
+}
+
+.btn-valid {
+    background-color: var(--valid)
+}
+
+.btn-error {
+    background-color: var(--error)
+}
+
+.btn-advanced {
+    background-color: var(--advanced);
+}
+
+.btn-secondary {
+    background-color: var(--bg-second);
+    color: var(--col-init)
+}

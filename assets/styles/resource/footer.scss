@@ -1,0 +1,51 @@
+footer {
+    // background-color: var(--bg-second);
+    background-color: rgb(94, 78, 238);
+}
+
+footer .newsLetter {
+    background-color: var(--bg-bluewhite-trans);
+    border-radius: 5px;
+}
+
+// footer .about {
+//     background-color: rgba(92, 70, 206, 0.774);
+// }
+
+.container-footer {
+    display: flex;
+    flex-grow: 2;
+}
+
+footer span img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    // background-color: #fff;
+    margin-right: 7px;
+}
+
+footer h3 {
+    // color: var(--col-primary);
+    text-transform: uppercase;
+}
+
+footer form {
+    padding: 10px;
+}
+
+footer form input {
+    padding: 10px;
+    border: none;
+    min-width: 75%;
+    border-radius: 4px;
+}
+
+footer form input::before {
+    content: "";
+    position: relative;
+    top: 25px;
+    width: 50px;
+    background-color: #451;
+}

@@ -3,8 +3,11 @@
 .big-title {
     font-size: 45px;
     color: var(--col-title);
+    letter-spacing: 0.4em;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 30px;
+    // font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+    font-family: 'Staatliches', cursive;
 }
 
 .smoll-title {

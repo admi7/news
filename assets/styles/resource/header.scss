@@ -1,0 +1,50 @@
+header {
+    // background: url('../../images/my/perso/pic1.png') top / cover no-repeat;
+    // background-position-x: 95%;
+    background-color: #222f66;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+header h1 {
+    color: var(--col-primary);
+}
+
+header h1 strong,
+header h2 strong {
+    color: var(--bg-bluewhite);
+    text-decoration-line: underline;
+}
+
+header h2 {
+    margin: 10px 30px;
+}
+
+header .decor-01 {
+    min-width: 100%;
+    min-height: 250px;
+}
+
+header a {
+    text-decoration-line: none;
+}
+
+header {
+    padding: 50px 20px;
+}
+
+header .container .p {
+    text-align: justify;
+    width: 600px;
+    margin: 0 60px;
+    background-color: rgba(37, 38, 39, 0.411);
+}
+
+header .container .p a.btn {
+    margin: 20px 40px;
+}
+
+.pub-header {
+    border-radius: 7px;
+    overflow: hidden;
+}
