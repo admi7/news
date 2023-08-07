@@ -1,0 +1,63 @@
+<div id="slider">
+  <div class="slide">
+    <a href="#1" class="w-100 fca" style="height: 300px; overflow: hidden;"><img class="line" width="100%" style="object-fit: cover;" src=" {{ asset('build/images/my/web/bg-pub-load.png') }} " alt="image de la publicite" /></a>
+  </div>
+  <div class="slide">
+    <a href="#2" class="w-100 fca" style="height: 300px; overflow: hidden;"><img class="line" width="100%" style="object-fit: cover;" src=" {{ asset('build/images/my/web/bg-pub-black.png') }} " alt="image de la publicite" /></a>
+  </div>
+  <div class="slide">
+    <a href="#3" class="w-100 fca" style="height: 300px; overflow: hidden;"><img class="line" width="100%" style="object-fit: cover;" src=" {{ asset('build/images/my/web/bg-header.png') }} " alt="image de la publicite" /></a>
+  </div>
+  <div class="slide">
+    <a href="#3" class="w-100 fca" style="height: 300px; overflow: hidden;"><img class="line" width="100%" style="object-fit: cover;" src=" {{ asset('build/images/my/web/pub-business-plan_mouhamet-diallo.png') }} " alt="image de la publicite" /></a>
+  </div>
+</div>
+
+<script>
+  var slides = document.querySelectorAll('.slide')
+  var currentSlide = 0
+  var slideInterval = setInterval(nextSlide, 3000)
+  
+  function nextSlide() {
+    slides[currentSlide].className = 'slide'
+    currentSlide = (currentSlide + 1) % slides.length
+    slides[currentSlide].className = 'slide active'
+  }
+</script>
+
+<style>
+  #slider {
+    width: 100%;
+    height: 300px;
+    // border: 2px solide var(--bg-second);
+    // background-color: red;
+  }
+  
+  .slide {
+    width: 100%;
+    //display: none;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: var(--trans-03);
+    -webkit-transition: var(--trans-03);
+    -moz-transition: var(--trans-03);
+    -ms-transition: var(--trans-03);
+    -o-transition: var(--trans-03);
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slide.active {
+    //display: block;
+    height: 300px;
+    transition: var(--trans-04);
+    -webkit-transition: var(--trans-04);
+    -moz-transition: var(--trans-04);
+    -ms-transition: var(--trans-04);
+    -o-transition: var(--trans-04);
+  }
+</style>

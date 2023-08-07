@@ -7,11 +7,20 @@
 
 .limit {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1300px;
+    overflow: hidden;
 }
 
 .line {
     padding: 20px;
+}
+
+.line10 {
+    padding: 10px;
+}
+
+.line5 {
+    padding: 5px;
 }
 
 .line30 {
@@ -29,31 +38,57 @@
 .line-nowrap {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
-    max-width: 1000px;
+    // flex-direction: row;
     overflow-x: scroll;
-    padding: 5px;
     /* background-color: #856; */
 }
 
 .line-nowrap::-webkit-scrollbar {
     width: 5px;
     /* height: 5px; */
+    // background-color: var(--bg-second);
     background-color: #258;
 }
 
-.decor-01 {
+.bg-dyn {
+    // background: url(var(--bg-dyn)) right / contain no-repeat;
+}
+
+.bg-init {
+    background-color: var(--bg-init)
+}
+
+.bg-second {
+    background-color: var(--bg-second)
+}
+
+.img-dyn .decor-01 {
     /* padding: 50px; */
     /* min-width: 100%; */
     min-height: 250px;
 }
 
+.box-top {
+    display: flex;
+}
+
+.box-top h3 {
+    color: var(--col-primary);
+    text-decoration: double;
+}
+
+.box-body {}
+
 .box {
-    padding: 20px;
-    min-width: 300px;
-    max-width: 500px;
+    min-width: 250px;
+    max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 0 7px var(--bg-second);
+}
+
+.box-pub {
+    color: white;
+    background: url('../../images/my/web/bg-pub-black.png') center / cover no-repeat;
 }
 
 .box-dyn {
@@ -69,24 +104,91 @@
     background-color: var(--bg-box);
 }
 
-@media (min-width: 1400px) {
-    .limit {}
+.m5 {
+    margin: 5px;
 }
 
-@media (min-width: 1000px) {
-    .limit {
-        width: 100%;
+.m5-0 {
+    margin: 5px 0;
+}
+
+.m0-5 {
+    margin: 0 5px;
+}
+
+.m10 {
+    margin: 10px;
+}
+
+.m10-0 {
+    margin: 10px 0;
+}
+
+.m0-10 {
+    margin: 0 10px;
+}
+
+.m20 {
+    margin: 20px;
+}
+
+.m30 {
+    margin: 30px;
+}
+
+.hid-obj {
+    height: 0;
+    overflow: hidden;
+}
+
+
+.br5 {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+@media (max-width: 1400px) {
+    .limit {}
+
+    .box-pub {
+        width: 1000px;
     }
 }
 
-@media (min-width: 800px) {
-    .limit {}
+@media (max-width: 1000px) {
+    .limit {
+        width: 100%;
+    }
+
+    .box-pub {
+        width: 800px;
+    }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 800px) {
     .limit {}
+
+    .box-pub {
+        width: 700px;
+    }
 }
 
-@media (min-width: 400px) {
+@media (max-width: 600px) {
     .limit {}
+
+    .box-pub {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .limit {}
+
+    .box-pub {
+        width: 350px;
+    }
 }

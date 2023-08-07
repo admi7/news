@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Aliou Sow",
+        "tel": 774095278,
+        "title": "Produits pharmacetique ...",
+        "description": "description de la pharmacie",
+        "img": "link/de/l'image.png",
+        "link": "link/to/page/aliou_sow"
+    },
+    {
+        "name": "Amadou Fall",
+        "tel": 774095278,
+        "title": "Boutique de vetement ...",
+        "description": "description de la boutique de vetement ",
+        "img": "link/de/l'image.png",
+        "link": "link/to/page/amadou_fall"
+    }
+]

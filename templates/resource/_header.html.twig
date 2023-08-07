@@ -1,17 +1,88 @@
-<header>
-  <div class="flex full">
-    <div class="limit">
-      <h1 class="big-title line">
-        multiservices en ligne
-        <br /><strong>Dakar - Sénégal</strong>
-      </h1>
+<header class="">
+  <div class="fb full full-header">
+    <div class="left-header w-100">
+      <aside class="cce">
+        <menu>
+          <ul style="width: 150px;">
+            <li>
+              <a href="#li1">li1</a>
+            </li>
+            <li>
+              <a href="#li2">li2</a>
+            </li>
+            <li>
+              <a href="#li3">li3</a>
+            </li>
+          </ul>
+        </menu>
+      </aside>
 
-      <div class="container">
-        <p class="p line">
-          <strong>MS <span>live</span></strong> est votre plateforme qui vous aide sur vos <a href="#services">services</a> et activités. <br />Nous vous proposons une large gamme de services qui peuvent vous etre utiles pour future projects. <br /> ont vous invite a consulté notre page <br /><a href="#" class="btn btn-primary">services</a>
-        </p>
+      <div class="limit">
+        {# partie de la publicité #}
+        <div id="aff-line" class="w-100" style="">
+          {# {% include 'resource/sliders-pub.html.twig' %} #}
+          {{ component('Pub', { images: ['images/my/web/bg-pub-black.png', 'images/my/web/bg-pub-load.png', 'images/my/web/bg-header.png', 'images/my/web/pub-business-plan_mouhamet-diallo.png'] }) }}
+
+          {# button goupe est les bouton de slide #}
+          {# <div class="button-group fca" style="transform: translateY(-40px);">
+            <div class="flex">
+              <button class="m0-5 active" style="border-radius: 50%; width: 15px; height: 15px"><span class="active blue" style="border-radius: 50%; width: 10px; height: 10px"></span></button>
+              <button class="m0-5" style="border-radius: 50%; width: 15px; height: 15px"><span class="active blue" style="border-radius: 50%; width: 10px; height: 10px"></span></button>
+              <button class="m0-5" style="border-radius: 50%; width: 15px; height: 15px"><span class="active blue" style="border-radius: 50%; width: 10px; height: 10px"></span></button>
+            </div>
+          </div> #}
+        </div>
+        <main class="main">
+          <h1 class="big-title line">
+            multiservices en ligne
+            <br /><strong>Dakar - Sénégal</strong>
+          </h1>
+          <div class="row line">
+            <p class="p line col">
+              <strong>MS <span>live</span></strong> est votre plateforme qui vous aide sur vos <a href="#services">services</a> et activités. <br />Nous vous proposons une large gamme de services qui peuvent vous etre utiles pour future projects. <br /> ont vous invite a consulté notre page <br /><a href="#" class="btn btn-advance">services</a>
+            </p>
+          </div>
+        </main>
+        <div class="container">
+          <div id="pub-header" class="w-100 m10-0 line-nowra"></div>
+        </div>
       </div>
     </div>
-    <div id="pub-header" class="w-100 pub-header"></div>
+    <div class="header-pub-left aqua">
+      <menu>
+        <ul class="cca">
+          <li class="container-pubs">
+            <div class="box w-100 m10-0">
+              <h3 class="smoll-title">Title pub</h3>
+              <div class="row">
+                <div class="col">
+                  <span><img class="line" width="100%" src=" {{ asset('build/images/icons/icon/phone.gif') }} " alt="image de la publicite" /></span>
+                </div>
+                <p class="p">
+                  description de la pub <br /> un peu plusse.
+                </p>
+              </div>
+              <div class="cr">
+                <a href="#" class="btn btn-primary">voir ?</a>
+              </div>
+            </div>
+            <div class="box w-100 m10-0">
+              <h3 class="smoll-title">Title pub</h3>
+              <div class="row">
+                <div class="col">
+                  <span><img class="line" width="100%" src=" {{ asset('build/images/icons/icon/phone.gif') }} " alt="image de la publicite" /></span>
+                </div>
+                <p class="p">
+                  description de la pub <br /> un peu plusse.
+                </p>
+              </div>
+              <div class="cr">
+                <a href="#" class="btn btn-primary">voir ?</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </menu>
+    </div>
   </div>
 </header>

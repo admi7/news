@@ -7,6 +7,10 @@
 
 @import '~bootstrap/scss/bootstrap';
 
+// import des composants scss
+@import "./scss/dist/_placeholder";
+@import "./scss/_variables.scss";
+
 @import './elements/elements.scss';
 @import './resource/resource.scss';
 
@@ -14,7 +18,7 @@
 :root {
     /* section background */
     --bg-init: #ffffff;
-    --bg-second: #f1edf1;
+    --bg-second: #d8bbd8;
     --bg-init-trans: #fffdffe3;
     --bg-second-trans: #f0e9e9ea;
     --bg-bluewhite-trans: rgba(87, 75, 190, 0.767);
@@ -39,7 +43,7 @@
 }
 
 body {
-    background-color: var(--bg-init);
+    background-color: var(--bg-second);
     color: var(--col-init);
     font-size: 15px;
     font-family: sans-serif;

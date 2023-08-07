@@ -15,6 +15,7 @@
     <!-- Feuilles de styles -->
     {% block stylesheets %}
       {{ encore_entry_link_tags('app') }}
+      {# <link rel="stylesheet" href=" {{ asset('@fortawesome/fontawesome-free/css/all.min.css') }} " /> #}
     {% endblock %}
   </head>
   <body>
@@ -31,13 +32,14 @@
         <div id="add"></div>
       </div>
       {% block footer %}
-        {% include 'resource/_footer.html.twig' %}
+
       {% endblock %}
     </div>
 
     <!-- Fichiers JS -->
     {% block javascripts %}
       {{ encore_entry_script_tags('app') }}
+      {{ encore_entry_script_tags('appts') }}
     {% endblock %}
   </body>
 </html>

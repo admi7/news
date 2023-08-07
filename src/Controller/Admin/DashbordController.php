@@ -2,6 +2,8 @@
 
 namespace App\Controller\Admin;
 
+use App\Form\NewsletterType;
+use App\Form\SearchFormType;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
@@ -13,8 +15,8 @@ class DashbordController extends AbstractDashboardController
     #[Route('/admin', name: 'admin')]
     public function index(): Response
     {
-        return parent::index();
-
+        // return parent::index();
+//
         // Option 1. You can make your dashboard redirect to some common page of your backend
         //
         // $adminUrlGenerator = $this->container->get(AdminUrlGenerator::class);
@@ -29,7 +31,18 @@ class DashbordController extends AbstractDashboardController
         // Option 3. You can render some custom template to display a proper dashboard with widgets, etc.
         // (tip: it's easier if your template extends from @EasyAdmin/page/content.html.twig)
         //
-        // return $this->render('some/path/my-dashboard.html.twig');
+        // return $this->render('admin/admin.html.twig');
+
+
+        $newsletterForm = $this->createForm(NewsletterType::class);
+        $searchForm = $this->createForm(SearchFormType::class);
+
+        // var_dump($annonces->getAnnonces());
+
+        return $this->render('home/index.html.twig', [
+            'NewsletterType' => $newsletterForm->createView(),
+            'searchForm' => $searchForm->createView()
+        ]);
     }
 
     public function configureDashboard(): Dashboard

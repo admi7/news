@@ -1,9 +1,21 @@
 header {
-    // background: url('../../images/my/perso/pic1.png') top / cover no-repeat;
-    // background-position-x: 95%;
-    background-color: #222f66;
-    min-height: 200px;
+    // background-color: var(--bg-init);
+    // min-height: 100vh;
     overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+header main {
+    background: url('../../images/my/web/header.png') right / contain no-repeat;
+}
+
+header menu ul {
+    // background-color: var(--bg-second);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 header h1 {
@@ -14,6 +26,20 @@ header h1 strong,
 header h2 strong {
     color: var(--bg-bluewhite);
     text-decoration-line: underline;
+}
+
+header .aff-line {
+    background-color: #345;
+    overflow: hidden;
+}
+
+header .sliders .slide-item {
+    display: none;
+    position: relative;
+}
+
+header .sliders .slide-item.active {
+    display: block;
 }
 
 header h2 {
@@ -33,14 +59,15 @@ header {
     padding: 50px 20px;
 }
 
-header .container .p {
+header main .p {
     text-align: justify;
     width: 600px;
     margin: 0 60px;
-    background-color: rgba(37, 38, 39, 0.411);
+    font-size: 24px;
+    // background-color: rgba(37, 38, 39, 0.411);
 }
 
-header .container .p a.btn {
+header main .p a.btn {
     margin: 20px 40px;
 }
 
@@ -48,3 +75,50 @@ header .container .p a.btn {
     border-radius: 7px;
     overflow: hidden;
 }
+
+.header-pub-left .box {
+    box-shadow: 3px -2px 7px var(--bg-init);
+    transition: var(--trans-04);
+}
+
+.header-pub-left .box:hover {
+    box-shadow: 3px -2px 7px var(--bg-init);
+    background-color: var(--bg-init);
+    transition: var(--trans-04);
+}
+
+.header-pub-left {
+    width: 300px;
+}
+
+.full-header {
+    display: flex
+}
+
+.container-pubs {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1300px) {}
+
+@media (max-width: 900px) {
+
+    .full-header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .left-header {
+        display: flex;
+        flex-direction: colmun;
+    }
+}
+
+@media (max-width: 1200px) {}

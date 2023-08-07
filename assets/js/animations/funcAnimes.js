@@ -1,4 +1,4 @@
-import { doms } from "../DOM";
+import { doms } from '../DOM';
 
 // VARIABLES
 const btnL = doms[ 'query' ]( '.btnSliderLeft' );
@@ -46,6 +46,5 @@ function slidersAnimes ( article )
     }
 
 };
-
 
 export { slidersAnimes };

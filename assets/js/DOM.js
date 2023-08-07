@@ -75,4 +75,4 @@ const doms = {
 
 // console.log( doms[ 'func' ]( '#testId' ) );
 
-export { DOMS, doms };
+export { doms, DOMS };

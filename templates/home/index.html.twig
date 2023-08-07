@@ -5,19 +5,18 @@
 {% endblock %}
 
 {% block body %}
-  <div id="home" class="flex">
+  <div id="home" class="">
     <div class="w-100">
-      <nav id="nav_home" class="">
-        {% include 'resource/_nav.html.twig' %}
-      </nav>
-      <div class="body_home_container w-100">
+      {% include 'resource/_nav.html.twig' %}
+      <div class="body_home_container column">
         {% include 'resource/_header.html.twig' %}
-      </div>
-      <h1 class="title line">titre h1</h1>
-      <div class="container">
-        <p>contenue</p>
+        {% include 'resource/_body.html.twig' %}
       </div>
     </div>
     {# {% include 'resource/annonces-container.html.twig' %} #}
   </div>
+{% endblock %}
+
+{% block footer %}
+  {% include 'resource/_footer.html.twig' %}
 {% endblock %}

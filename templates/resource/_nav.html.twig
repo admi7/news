@@ -1,42 +1,48 @@
-<nav class="fcb">
-  <a href=" {{ path('app_home') }} "><img src=" {{ asset('build/images/my/web/logo-for-white-navbar.png') }}" alt="logo" /></a>
-  <menu>
-    <div class="fca">
-      <form class="fca" action="get">
-        <input type="text" placeholder="Recherche ..." />
-        {# <button class="btn-valid" type="submit">valider</button> #}
-      </form>
-      <div class="bar cca">
-        <p class="p">
-          Téléphone : <span><img src=" {{ asset('build/images/icons/icon/phone.gif') }} " alt="phone call" /></span><strong>33 000 00 00</strong>
-        </p>
+<nav class="column">
+  {# premier column de la nav #}
+  <div class="fcb navTop">
+    <a href=" {{ path('app_home') }} "><img src=" {{ asset('build/images/my/web/logo-for-white-navbar.png') }}" alt="logo" /></a>
+    <menu>
+      <div class="fca">
+        <div class="form-controler">{{ form_start(searchForm) }}
+          {{ form_end(searchForm) }}</div>
+
+        <div class="bar cca">
+          <p class="p">
+            Téléphone : <span><img src=" {{ asset('build/images/icons/icon/phone.gif') }} " alt="phone call" /></span><strong>33 000 00 00</strong>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="nav-links fca">
-      <ul class="fca">
-        <li>
-          <a href=" {{ path('app_home') }} ">Home</a>
-        </li>
-        <li>
-          <a href=" {{ path('app_equipe') }} ">Equipe</a>
-        </li>
-        <li>
-          <a href=" {{ path('app_services') }} ">Services</a>
-        </li>
-      </ul>
-    </div>
-  </menu>
+    </menu>
+  </div>
+
+  <div class="navBottom fcb">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a href=" {{ path('app_home') }} " class="nav-link active">Acceuil</a>
+      </li>
+      <li class="nav-item">
+        <a href=" {{ path('app_propos') }} " class="nav-link">A propos</a>
+      </li>
+      <li class="nav-item">
+        <a href=" {{ path('app_clients') }} " class="nav-link">Clients</a>
+      </li>
+      <li class="nav-item">
+        <a href=" {{ path('app_propos') }}equipes" class="nav-link">Equipes</a>
+      </li>
+      <li class="nav-item">
+        <a href=" {{ path('app_services') }} " class="nav-link">Services</a>
+      </li>
+    </ul>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a href=" {{ path('app_contact') }} " class="btn btn-advance">Contactez-nous</a>
+      </li>
+      <li class="nav-item">
+        <a href=" {{ path('app_shop') }} " class="nav-link">Boutique / Shop</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-<div class="navbar flex">
-  <ul class="flex">
-    <li>
-      <a href=" {{ path('app_services') }} ">Clients</a>
-    </li>
-    <li>
-      <a href=" {{ path('app_services') }} ">Boutique</a>
-    </li>
-    <li>
-      <a href=" {{ path('app_services') }} ">Services</a>
-    </li>
-  </ul>
-</div>
+
+<script></script>

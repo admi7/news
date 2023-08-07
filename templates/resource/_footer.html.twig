@@ -15,15 +15,23 @@
       </div>
       <div class="newsLetter w-100 line cca">
         <h1 class="line smoll-title">postuler pour les news letter</h1>
-        <form class="fca w-100" action="get">
-          <input type="text" placeholder="Email adress ..." />
-          <button class="btn btn-valid" type="submit">valider</button>
-        </form>
+        <div class="input-group">
+          {{ form(NewsletterType, { methode: 'post' }) }}
+          <div class="form-outline">
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <button type="sumit" class="btn-primary"><i class="fas fa-search"></i>v</button>
+          </div>
+          {{ form_end(NewsletterType) }}
+        </div>
+        {# <form class="fca w-100" action="get">
+            <input type="text" placeholder="Email adress ..." />
+            <button class="btn btn-valid" type="submit">valider</button>
+          </form> #}
         <p class="p">Inscrivez-vous aux Newsletters et recevez nos offres spéciaux et actualités.</p>
       </div>
-      <div class="container container-footer w-100">
+      <div class="red container-footer">
         <div class="about ccb box-dyn" style="--width: 400px; --height: 350px">
-          <img src=" {{ asset('build/images/my/web/logo.svg') }}" alt="logo" />
+          <img src=" {{ asset('build/images/my/web/logo-120x120-copie.svg') }}" alt="logo" />
           <h3 class="">Nos informations !</h3>
           <div class="flex">
             <p>
